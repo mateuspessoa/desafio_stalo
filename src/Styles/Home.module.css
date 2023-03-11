@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    width: 22%;
+    height: 80vh;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.superior {
+    width: 100%;
+    height: 20%;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 8px solid #F4F5F7;
+}
+
+.superior h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E3E5C;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.btns_filtro {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.btns_filtro button {
+    background-color: #F4F5F7;
+    border-radius: 32px;
+    width: 89px;
+    height: 45px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #9FA5C0;
+    cursor: pointer;
+}
+
+.btn_filtro_principal {
+    background-color: #1FCC79 !important;
+    border-radius: 32px;
+    width: 89px;
+    height: 45px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.007em;
+    color: #FFF !important;
+    cursor: pointer;
+}
+
+.container_hora {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 9%;
+    padding-left: 20px;
+    border-bottom: 2px solid #F4F5F7;
+}
+
+.container_hora h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E3E5C;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+
+}
+
+.container_tarefas_geral {
+    width: 100%;
+    height: 50%;
+    max-height: 50%;
+    overflow: auto;
+    /*background-color: red;*/
+}
+
+.container_tarefas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 17%;
+    border-bottom: 2px solid #F4F5F7;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*background-color: green;*/
+}
+
+.container_tarefas select {
+    width: 22px;
+}
+
+.container_tarefas select option {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #9FA5C0;
+    padding: 50px;
+}
+
+.option_concluir {
+    color: #39C4A5 !important;
+}
+
+.option_excluir {
+    color: #FF6464 !important;
+}
+
+.option_editar {
+    color: #8c8cff !important;
+}
+
+.item_tarefa {
+    display: flex;
+}
+
+.item_tarefa input {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.item_tarefa input:checked {
+    background-color: #39C4A5;
+}
+
+.item_tarefa label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #2E3E5C;
+}
+
+.total_tarefas {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    padding-left: 20px;
+}
+
+.total_tarefas h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.50px;
+    color: #2E3E5C;
+    margin-right: 8px;
+}
+
+.total_tarefas span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.50px;
+    color: #1FCC79;
+}
+
+.nome_tarefa {
+    text-decoration: line-through;
+}
+
+.container_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 14%;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: -1px -17px 29px -6px rgba(31,204,121,0.21);
+}
+
+.home, .logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home span {
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.7%;
+    color: #1FCC79;
+}
+
+.logout span {
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.7%;
+    color: #9FA5C0;
+}
+
+.adicionar {
+    position: absolute;
+    z-index: 999;
+    bottom: 100px;
+    left: 825px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.adicionar span {
+    font-family: 'Inter', sans-serif;
+    color: #9FA5C0;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.7%;
+    margin-top: 5px;
+}
+
+.icone_mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #1FCC79;
+    width: 50px;
+    height: 50px;
+}
+
+.container_adicionar {
+
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    border-radius: 32px 32px 0 0 ;
+    z-index: 999;
+    bottom: 83px;
+    width: 22%;
+    height: 30%;
+    background-color: #fcfcfc;
+    animation: animate-div 0.5s;
+}
+
+@keyframes animate-div {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.container_adicionar h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E3E5C;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    margin-top: 27px;
+}
+
+.container_adicionar input {
+    margin-top: 27px;
+    width: 100%;
+    height: 56px;
+    border-radius: 32px;
+    outline: none;
+    border: 1px solid #D0DBEA;
+    padding-left: 25px;
+    color: #9FA5C0;
+}
+
+.container_adicionar input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.007em;
+    color: #9FA5C0;
+}
+
+.btns_add {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.btns_add button {
+    width: 47%;
+    height: 56px;
+    border-radius: 32px;
+    border: none;
+    background-color: #1FCC79;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.007em;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #F4F5F7 !important;
+    color: #2E3E5C !important;
+}
+
+
+
+
+
+@media (max-width: 740px) {
+    .conteudo {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .adicionar {
+        left: 160px;
+        bottom: 35px;
+    }
+
+    .container_adicionar {
+        width: 100%;
+        height: 40%;
+        bottom: -2px;
+    }
+}

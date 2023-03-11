@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_form {
+    width: 30%;
+    height: 85vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.titulo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2E3E5C;
+    line-height: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.form input {
+    width: 100%;
+    height: 56px;
+    border-radius: 32px;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #9FA5C0;
+    outline: none;
+    border: 1px solid #D0DBEA;
+    padding-left: 25px;
+}
+
+.form input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9FA5C0;
+    letter-spacing: 0.007em;
+}
+
+.erro {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(255, 122, 122);
+}
+
+.erroNome {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(255, 122, 122);
+}
+
+.erroSenha {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(255, 122, 122);
+}
+
+.btn_submit {
+    margin-top: 50px;
+    background-color: #1FCC79;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-right: 25px;
+    color: #FFF !important;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1FCC79;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 740px) {
+
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container_form {
+        padding-top: 90px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .btn_submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
